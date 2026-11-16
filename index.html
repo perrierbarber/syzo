@@ -52,6 +52,7 @@
   .logo-titre{width:clamp(220px,40vw,560px);aspect-ratio:1;animation:monte .9s cubic-bezier(.2,.7,.2,1) both}
   .logo-titre svg{width:100%;height:100%}
   .welcome{display:block;font-family:var(--signature);color:var(--blanc);font-size:clamp(96px,11vw,170px);line-height:.9;margin:0 0 clamp(4px,1vw,14px) -.04em}
+  .hero p strong{font-weight:600}
   .cache{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
   .hero h1{font-family:var(--titre);font-weight:700;text-transform:uppercase;font-size:clamp(110px,17vw,270px);line-height:.85;letter-spacing:-.005em}
   .hero h1 span{display:block}
@@ -229,7 +230,7 @@
     <div class="accroche">
       <h1 class="cache">Syzō Barbers, barbershop au Mans</h1>
       <span class="welcome" aria-hidden="true">Welcome</span>
-      <p>Syzō, c'est un barbershop partagé, situé au 37 Avenue du Général Leclerc au Mans. Chacun y a son univers et son propre agenda&nbsp;: choisissez votre barber et réservez directement avec lui.</p>
+      <p>Syzō, c'est un barbershop partagé situé au 37 Avenue du Général Leclerc au Mans. Chaque barber est <strong>indépendant</strong>, avec son style et son propre agenda&nbsp;: choisissez votre barber et réservez directement avec lui.</p>
       <div class="actions">
         <a class="bouton plein" href="#barbers">Choisir mon barber</a>
       </div>
@@ -237,11 +238,7 @@
     <div class="logo-grand"><svg class="logo" role="img" aria-label="Syzō Barbers"><use href="#syzo"/></svg></div>
   </section>
 
-  <section id="barbers" aria-labelledby="titre-barbers">
-    <div class="barbiers-intro">
-      <h2 id="titre-barbers">Choisissez votre barber</h2>
-      <p>Chacun travaille à son compte, avec sa propre façon de couper. Réservez avec celui qui vous correspond.</p>
-    </div>
+  <section id="barbers" aria-label="Les barbers">
 
     <div id="liste-barbers">
       <article class="barbier encre sur-encre" data-barbier="tony">
@@ -284,7 +281,7 @@
   <section id="lieu" class="lieu" aria-labelledby="titre-lieu">
     <h2 id="titre-lieu">Un lieu partagé</h2>
     <div class="texte">
-      <p>Le barbershop est situé au rez-de-chaussée d'un immeuble haussmannien, au 37 avenue du Général Leclerc, Le Mans.</p>
+      <p>Le barbershop est situé au rez-de-chaussée d'un immeuble de style haussmannien, au 37 avenue du Général Leclerc, Le Mans.</p>
       <p>Chaque barber y reçoit ses clients, uniquement sur rendez&#8209;vous.</p>
     </div>
   </section>
